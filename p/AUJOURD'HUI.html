@@ -1,0 +1,67 @@
+<!doctype html> <html>
+<head><script src="angular.min.js"></script> <script src="jquery.js"></script>
+<meta charset="UTF-8"> <title></title> <style>@font-face { font-family: "Liberation Serif"; font-weight: normal; font-style: normal; font-stretch: normal; src: url(Liberation-Serif.ttf) } @font-face { font-family:'OUTLINE'; src:url('Cousine-Bold.ttf'); } body { font-family: 'OUTLINE'; direction:; unicode-bidi: embed; background: url(nice-backgrounds-wallpaper-7.jpg) no-repeat center fixed; -webkit-background-size: cover; background-color: purple; }::selection { background-color: RGB(165,210,34); color: RGB(174,27,255); }  h1 { line-height: 80px; } #light { background-color: lightBlue; color: purple; padding: 8px; } #med { background-color: purple; color: lightBlue; padding: 8px; } img { width:100%; } h3 { color: gold; } h2 { color: red; } a { color: green; text-decoration: none; }   table,tr,td{ border: solid 2px;  } table{ width: 100%;  }  @font-face { font-family:'djadli'; src:url(Hacen%20Liner%20Screen.ttf); } @font-face { font-family:'dalmatien'; src:url('Cowboys.ttf'); }  #cont{ width:95%; margin: auto; background-color: #916DAE; border-radius: 8px; padding: 8px; direction: ltr;}  pre{ white-space:pre-line; font-family: "Liberation Serif"; font-size: 20px; font-weight:; background-color: #8050FFce; color: #000; padding: 8px;  }  .fr { direction: ltr; }  .entrep{ width: 60%; border-radius: 6px; border: 8px solid green; margin: auto; padding: 20px; font-size: 16px;background-color: gold; }    .exempl { background-color: magenta;}   a:link { font-weight: bold; text-decoration: none; color: purple; } a:visited { font-weight: bold; text-decoration: none; color: red; } a:hover, a:active { text-decoration: underline; color: #3B6132; }  .img { border: #d0d0d0 solid 1px; padding: 1%; margin: auto; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); width:80%; } h2 {  font-weight: bold; color: pink; background-color: purple; display: inline; }  h2:hover{ font-family: ; } h3{  font-weight: bold; color: pink; background-color: ; display: inline; } h4:hover{ font-family: ; } h5,h4  { color: #96A0AC; } h5,h4 { background-color: pink; display: inline; } p { direction: ; font-size:20px; } .xmpl {padding: 6px; border-radius: 6px; border: 8px double RGB(140,51,187); font-size: 18px; font-weight: bold; background-color: RGB(255,255,0); } table { border: solid magenta 2px; } td { border: solid cyan 2px; } </style>
+
+<script src="fn552012.js"></script></head>
+<body><div id="cont"><pre>
+<div class="entrep"><center><h2><font color="#D50303"><b><script language="JavaScript" type="text/javascript">
+var PT=new PrayTimes('MWL');var times=PT.getTimes(new Date(),[36.8028,10.1797],1);
+
+var fixd;function isGregLeapYear(year){return year%4==0&&year%100!=0||year%400==0;}function gregToFixed(year,month,day){var a=Math.floor((year-1)/4);var b=Math.floor((year-1)/100);var c=Math.floor((year-1)/400);var d=Math.floor((367*month-362)/12);if(month<=3)e=0;else if(month>2&&isGregLeapYear(year))e=0;else
+e=-2;return 1-1+365*(year-1)+a-b+c+d+e+day;}function Hijri(year,month,day){this.year=year;this.month=month;this.day=day;this.toFixed=hijriToFixed;this.toString=hijriToString;}function hijriToFixed(){return this.day+Math.ceil(29.5*(this.month-1))+(this.year-1)*354+Math.floor((3+11*this.year)/30)+227015-1;}
+
+function hijriToString(){var months=new Array("محرم","صفر","ربيع 1","ربيع 2","جمادى 1","جمادى 2","رجب","شعبان","رمضان","شوال","ذي القعدة","دي الحجة"
+);return this.day+" "+months[this.month-1]+" "+this.year;}
+
+function fixedToHijri(f){var i=new Hijri(1100,1,1);i.year=Math.floor((30*(f-227015)+10646)/10631);var i2=new Hijri(i.year,1,1);var m=Math.ceil((f-29-i2.toFixed())/29.5)+1;i.month=Math.min(m,12);i2.year=i.year;i2.month=i.month;i2.day=1;i.day=f-i2.toFixed()+1;return i;}var tod=new Date();var weekday=new Array("الاحد","الاثنين","الثلاثاء","الاربعاء","الخميس","الجمعة","السبت");var monthname=new Array("جانفي ","قيقري","مارس","أفريل","ماي","جوان","جويلية","أوت","سبتمبر","أكتوبر","نوفمبر ","ديسمبر");var y=tod.getFullYear();var m=tod.getMonth();var d=tod.getDate();var dow=tod.getDay();
+document.write(weekday[dow]+" "+d+" "+monthname[m]+" "+y);m++;fixd=gregToFixed(y,m,d);var h=new Hijri(1421,11,28);h=fixedToHijri(fixd);
+document.write(" | "+h.toString()+"");</script></b></font></h2></center></div>
+	<img src="a.jpg" alt="">
+	<img src="b.jpg" alt="">
+	<img src="c.jpg" alt="">
+<hr/>
+	<!--<span id="tod">-->
+	<span id="toto"> </span><hr>
+	
+<script> var localnow = new Date(); 
+  var lTime = localnow.getTime()+(localnow.getTimezoneOffset()-60)*60; 
+  var now = new Date(lTime); 
+  var jour = now.getDate();
+  var mois = now.getMonth()+1;
+var prenom = '<a href="jj.html#'+ jour + mois +'">Aujourdhui</a>';
+ document.getElementById('toto').innerHTML = prenom ;
+</script>
+<script>
+ jQuery(function($){
+	  var $container = $('#container');
+	  	  if($container && (typeof $container.imagesLoaded != 'undefined')){
+				  $container.imagesLoaded( function(){
+				  $container.masonry({
+				  itemSelector : '.views-row',
+				  columnWidth: 1,
+				  isAnimated : true
+			  });
+			});
+		  }
+  });
+</script>
+<script>
+var adresse = "jj.html#'+ jour + mois +'"
+</script>
+<a href="javascript:" onclick="window.open('les%20jours.html#'+ jour + mois +'', 'Radio Babnet', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=728,height=380,left = 212,top = -16'); return false;" title="Radio Babnet">
+ooooooo
+</a>
+<img src="http://www.elahmad.com/newsticker/jaz.jpg" alt=""><hr>
+<span id="toto"> </span><hr>
+
+
+</pre>	
+</div>
+<footer>ffffffffffffffffff</footer>
+<a href="http://www.ooredoo.tn/particuliers/mobile-wifi-4G-MF920V#" class="top_appear" title="Revenir en haut de page" style="display: block;">Retour top</a>
+
+: <a href="#" class="top_appear" title="Revenir en haut de page" style="display: block;">Retour top</a>
+</body>
+<!--
+<a href="file:///E:/d/les%20jours.html" target="_blank">les journées</a>
+</html>
