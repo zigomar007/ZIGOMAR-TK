@@ -1,0 +1,111 @@
+@import url("file:///F:/d/SERVEUR%20ne%20pas%20toucher/menu/style.css");
+@font-face {
+    font-family: "Liberation Serif";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('../fonts/tout%20font%20ouvert/Liberation-Serif.ttf');
+    }
+	@font-face {
+		font-family:'OUTLINE';
+		src:url('file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/tout%20font%20ouvert/cousine/simpo.ttf');
+	}            
+	body {
+	font-family: 'OUTLINE';
+	direction:;
+	unicode-bidi: embed;
+	background: url('../nice-backgrounds-wallpaper-7.jpg');
+	repeat: no-repeat ;
+    background-size: cover;
+	background-color: purple;
+ }
+	pre{
+	white-space:pre-line;
+	font-family: "OUTLINE";
+	font-size: 20px;
+	font-weight:;
+	background-color: #8050ce;
+	color: #000;
+	padding: 8px;
+	
+	}
+	#cont{
+	width:90%;
+	margin: auto;
+	background-color: #916DAE;
+	border-radius: 8px;
+	padding: 8px;
+	}
+	h1 {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 40px;
+	color: purple;
+	}
+	#light {
+	background-color: lightBlue;
+	color: purple;
+	
+	}
+	#med {
+	background-color: purple;
+	color: lightBlue;
+	padding: 8px;
+	}
+	img {
+	height: 100%;
+	}
+	h3 {
+	color: gold;
+	}
+	h2 {
+	color: red;
+	}
+	a {
+	color: green;
+	text-decoration: none;
+	}
+	.entrep{
+	width: 60%;
+	border-radius: 6px; 
+	border: 8px solid green;
+	margin: auto;
+	padding: 20px;
+	font-size: 16px;
+	}
+	.exempl {
+	background-color: magenta;
+	}
+	table,tr,td{
+	border: solid 2px;
+
+	}
+	table{
+	width: 100%;
+
+	}
+.fr {
+	direction:ltr;
+	}
+.ar {
+	direction:rtl;
+	}
+::selection {
+    font-weight: bold;
+    background: #e3f;
+    color: #5a0;
+	text-shadow:none
+	}
+
+::-moz-selection {
+    font-weight: bold;
+    background: #e3f;
+    color: #5a0;
+	text-shadow:none
+	}
+	/*
+		#light {
+	background-color: lightBlue;
+	color: purple;
+	padding: 8px;
+	}
