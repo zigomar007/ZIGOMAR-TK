@@ -1,0 +1,74 @@
+<html>
+<head><script src="file:///F:/d/SERVEUR%20ne%20pas%20toucher/js/jquery-3.1.0.min.js"></script>
+	<meta charset="UTF-8">
+<title>Summer Games Countdown</title>
+<link rel="stylesheet" href="file:///F:/d/SERVEUR%20ne%20pas%20toucher/css/blink.css">
+ <link rel="stylesheet" href="file:///F:/d/SERVEUR%20ne%20pas%20toucher/css/f.css">
+<style>
+#count2{
+line-height:1.5px;
+color:RGB(14,80,135);
+font-size:16px;
+font-weight:bold;
+width:100%;
+<!--
+background: url(../pied.png) repeat;
+-->
+background-color: RGB(106,128,128);  
+color:white;
+}
+html { overflow:hidden; }
+</style>
+<script type="text/javascript">
+// globals -- calculate only once
+// set target date to 1100GMT on August 8, 2008
+var targetDate = Date.UTC(2022, 8, 12);
+var oneMinute = 60 * 1000;
+var oneHour = oneMinute * 60;
+var oneDay = oneHour * 24;
+var oneMonth = oneDay * 30;
+
+function getTimeUntil(targetMs) {
+var today = new Date();
+var diff = targetMs - today.valueOf();
+return Math.floor(diff);
+}
+function getCountDown() {
+var ms = getTimeUntil(targetDate);
+var output = "";
+var months, days, hrs, mins, secs;
+
+if (ms >= 0) {
+months = Math.floor(ms/oneMonth);
+ms -= oneMonth * months;
+days = Math.floor(ms/oneDay);
+ms -= oneDay * days;
+hrs = Math.floor(ms/oneHour);
+ms -= oneHour * hrs;
+mins = Math.floor(ms/oneMinute);
+ms -= oneMinute * mins;
+secs = Math.floor(ms/1000);
+output +=  "باقي من الزمن :" + months +" شهر و " + days + " يوم " + "على اعتدال الخريف" ;
+} else {
+output += "الاعتدال الخريفي !";
+}
+return output;
+}
+function updateCountDown() {
+
+document.getElementById('count2').innerHTML = getCountDown();
+setTimeout("updateCountDown()", 1000);
+}
+</script></head>
+<body onload="updateCountDown()">
+<!--<p>
+<script type="text/javascript">
+document.write("(" + (new Date(targetDate)).toLocaleString());
+document.write(" in your time zone.)");
+</script>
+</p>class="typed-cursor mmar "
+-->
+
+<div id="count2"></div>
+</body>
+</html>
