@@ -1,0 +1,144 @@
+﻿/*
+a:focus, select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="submit"]:focus, input[type="checkbox"]:focus {
+	background: rgba(0, 231, 255, 0.47);
+}
+a:focus img {
+    border: 5px solid;
+    /* position: relative;*
+    overflow: hidden;
+}
+
+body background-color:RGB(167,130,170);
+*/
+body{
+    direction: ltr;
+    unicode-bidi: bidi-override;
+	font-family:al-jazeera-arabic-bold;
+}
+@font-face {
+	font-family:aga cordoba;
+	src:url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/arabfont/aga%20cordoba.ttf);
+}
+@font-face {
+	font-family:al-jazeera-arabic-bold;
+	src:url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/arabfont/al-jazeera-arabic-bold.ttf);
+}
+@font-face {
+	font-family:djadli_linearHour;
+	src:url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/arabfont/djadli_linearHour.otf);
+}
+@font-face {
+	font-family:DIWANBNT;
+	src:url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/tout%20font%20ouvert/DIWANBNT.ttf);
+}
+a:focus  {
+	background: rgba(0, 231, 255, 0.47);
+}
+
+
+ h1 {
+	font-family:DIWANBNT;
+	
+	color: gold;
+}
+
+/*....................................................*/
+
+.index body {
+    
+    background: url(//biblio-restaurant.jpg) no-repeat center fixed;
+	background-size: cover;
+	background-color:#6E00FF;
+}
+.site-nav {
+	background:url(winterland_bVm2uDuH.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+	
+	width: 200px;
+	border: solid 2px;
+	border-radius: 4px;
+	border: solid 2px;
+	margin: 20px;
+	padding: 20px;
+}
+.site-nav  a{
+color: white;
+font-weight:bolder;	
+text-shadow: 2px 2px 4px orange;  
+}
+.site-nav a:hover {
+    font-family: andalus,Arial, Helvetica, sans-serif;
+
+    
+    color: gold;
+    text-decoration: none;
+    font-weight: bolder;
+   text-shadow:8px 8px 8px yellow;
+}
+
+
+.page2 body {
+    font: 11px verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: purple url(http://www.fraja-maroc.net/images/pied.png) repeat;
+    overflow-x: hidden;
+	
+}
+
+
+/* Focus or hover updates*/
+
+
+
+
+
+
+.page3 body{
+	background: yellow url(bandeau_header.jpg) repeat;
+	
+}
+
+.unselectable{-moz-user-select:-moz-none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+
+	
+/*ol,ul {
+		list-style: square url("sqpurple.gif");
+
+		*/
+	 #pom {
+		width: 40%;
+		background-color: darkblue;
+		
+		font-size: 40px;
+		
+		
+		margin-left: 40px;
+	 }
+	 
+	 #pom ul{
+		list-style-image: url("pomme.gif");
+		list-style-position:inside;
+		
+	 }
+
+	
+	
+	
+	::-webkit-scrollbar {
+	
+    width: 10px; 
+}
+::-webkit-scrollbar-thumb {
+
+	background: url(IDR_THEME.png);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #702297;
+    border-radius: 5px;
+}
+	
