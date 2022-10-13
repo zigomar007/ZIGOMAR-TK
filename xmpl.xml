@@ -1,9 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
 <title>Mon blog super cool</title>
 <link>http://www.monwebsite.com/</link>
 <description>Mes derniers articles cool</description>
+<image>
+<url>http://zigomar.tk/img/Avatar.png</url>
+<title>رسالة زيقومار</title>
+<link>http://zigomar.tk/</link>
+</image>
 <item>
 <title>Article 3</title>
 <link>exemple.com/3</link>
