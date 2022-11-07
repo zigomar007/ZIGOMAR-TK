@@ -13,7 +13,7 @@
 	border: solid 2px;
 	border-radius: 4px;
 	/* http://www.fraja-maroc.net/images/ 
-	background: pink url(pied.png) repeat;*/
+	background: pink url(../image/pied.png) repeat;*/
  background-color: #457B9D;   
 }
 header {
@@ -22,7 +22,7 @@ header {
 	border: solid 2px;
 	border-radius: 4px;
 	/*
-	background: pink url(pied.png) repeat;*/
+	background: pink url(../image/pied.png) repeat;*/
 	background-color: ;
     overflow-x: hidden;
 }
@@ -86,7 +86,7 @@ opacity: 0.5;
 #ulist{
 	color: #1D3557;
     background-color: #A8DADC;/*GB(167,130,170);
-	background:url(bg_005.png);*/
+	background:url(../image/bg_005.png);*/
    padding-left: 20px;
    text-indent: 2px;/*list-style-position: inside
    https://css-tricks.com/images/
@@ -150,16 +150,16 @@ top:0%; left:0%; height:100%; width:100%; overflow: hidden; background-size:cove
 	height: 90px;
 	border: solid 2px;
 	border-radius: 0 0 4px 4px;
-	background:url(//bg_footer_title.png);
+	background:url(../image/bg_footer_title.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #diChangeBackground:hover {
-    background-image: url(spinning_earth.gif);
+    background-image: url(../image/spinning_earth.gif);
 }
 #diChangeBackground {
 
-    background-image: url(non_spinning_earth.gif);
+    background-image: url(../image/non_spinning_earth.gif);
     background-size: 50px 50px;
     background-repeat: no-repeat;
     width: 50px;
