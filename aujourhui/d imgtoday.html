@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://bdoubliees.com/vaillantpif/annees/1950.htm -->
+<html><head>
+<title>export</title>	
+<script src="file:///F:/d/SERVEUR%20ne%20pas%20toucher/js/jquery.js"></script><script src="file:///F:/d/SERVEUR%20ne%20pas%20toucher/js/jquery-3.1.0.min.js"></script>
+<script src="procedures.js"> </script>
+<style>
+img {
+width :100%;
+height :200px;
+margin:;
+overflow:hidden;
+}
+
+body {
+height:200px;
+overflow:hidden;
+}
+
+@media screen and (max-width:650px){
+img {
+width :90%;
+height :200px;
+margin:;
+overflow:hidden;
+}
+}
+@media screen and (max-width:550px){
+
+img {
+width :82%;
+height :200px;
+margin:;
+overflow:hidden;
+}
+}
+</style>
+</head>
+<body>
+<!--
+/*
+nav=navigator.appName.substring(0,3);
+ver=navigator.appVersion.substring(0,1);
+if (nav == "Mic" && ver >= 4) {
+	document.write('<link rel="stylesheet" type="text/css" href="http://bdoubliees.com/bdoubnew.css">\n');
+
+	
+$('#reifeisen_mapoal').html('<b><a href="http://bdoubliees.com/couvertures/'+dayd+'.htm">La couverture du jour</a></b>\n<br><img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/'+mond+"/"+dayd+'.jpg"');		
+
+
+$('#reifeisen_mapoal').html('<img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/' + mond +"/" + dayd + '.jpg">'););
+}
+
+
+	var Sotro=new Date();
+		var aam= Sotro.getFullYear();
+		var mond= Sotro.getMonth() +1;
+		var dayd= Sotro.getDate();
+		var hourd= Sotro.getHours();
+		
+	document.write('<b><a href="http://bdoubliees.com/couvertures/'+day+'.htm">La couverture du jour</a></b>\n<br><img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/'+mois+"/"+day+'.jpg"')
+	
+	<b><a href="http://bdoubliees.com/couvertures/'+day+'.htm">La couverture du jour</a></b><br>;
+
+...............................................................................................................................................	
+<hr><hr><hr><div class="execphpwidget">
+<div id="reifeisen_mapoal"></div><script>
+var $=jQuery;
+	$(document).ready(function(){
+	var Sotro=new Date();
+		var aam= Sotro.getFullYear();
+		var mond= Sotro.getMonth()+1;
+		var dayd= Sotro.getDate();
+		var hourd= Sotro.getHours();
+		
+	
+		
+		$('#reifeisen_mapoal').html('<img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/' + mond +"/" + dayd + '.jpg">');});
+</script></div>	
+https://random.imagecdn.app/500/150
+-->
+<script>
+function couvjour() {
+  var localnow = new Date(); 
+  var lTime = localnow.getTime()+(localnow.getTimezoneOffset()-60)*60; 
+  var now = new Date(lTime); 
+  var day = now.getDate();
+  var mois = now.getMonth()+1;
+  document.write('<img src="https://picsum.photos/500/150" srcset="imgdate/'  + mois + '/' + day + '.jpg" >');
+}
+
+
+
+</script>
+<script language="JavaScript">couvjour();</script>
+</body></html>
