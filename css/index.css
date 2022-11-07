@@ -1,9 +1,9 @@
-@import url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/fontawesome-free-5.9.0-web/css/all.css);
-@import url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/fontawesome-free-5.9.0-web/css/fontawesome.css);
-@import url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/fontawesome-free-5.9.0-web/css/all.css);
-@import url(file:///F:/d/SERVEUR%20ne%20pas%20toucher/fonts/fontawesome-free-5.9.0-web/css/fontawesome.min.css); 
-@import url(file:///C:/bur/inf/trav/colonne/sidebar.min.css);
-@import url(file:///C:/bur/inf/trav/colonne/style.min.css);
+@import url(./all.css);
+@import url(./fontawesome.css);
+@import url(./all.css);
+@import url(./fontawesome.min.css); 
+@import url(./sidebar.min.css);
+@import url(./style.min.css);
 
 .main {
 	font-family: "Liberation Serif";
@@ -188,7 +188,7 @@ footer {
 	padding-right: 2px;
 }
 .site-nav {
-	background:url(winterland_bVm2uDuH.gif);
+	background:url(../image/winterland_bVm2uDuH.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: white;
@@ -266,5 +266,5 @@ body {
 }
 }
 /*
-@import url(file:///F:/d/15%20tout%20html%20Apprendre%20informatique/view-id-author/bootstrap.min.css); 
+@import url(../css/bootstrap.min.css); 
  */
