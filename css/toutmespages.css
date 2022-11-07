@@ -48,21 +48,9 @@ a:focus  {
     
     background: url(//biblio-restaurant.jpg) no-repeat center fixed;
 	background-size: cover;
-	background-color:#6E00FF;
+	background-color: #A8DADC;
 }
-.site-nav {
-	background:url('../img/winterland_bVm2uDuH.gif');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: white;
-	
-	width: 200px;
-	border: solid 2px;
-	border-radius: 4px;
-	border: solid 2px;
-	margin: 20px;
-	padding: 20px;
-}
+
 .site-nav  a{
 color: white;
 font-weight:bolder;	
@@ -134,11 +122,12 @@ text-shadow: 2px 2px 4px orange;
 }
 ::-webkit-scrollbar-thumb {
 
-	background: url(IDR_THEME.png);
+	background-color: #1D3557;
+	height: 2px;
 	border-radius: 5px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #702297;
+    background-color: #E63946;
     border-radius: 5px;
 }
 	

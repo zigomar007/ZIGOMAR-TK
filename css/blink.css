@@ -1,0 +1,15 @@
+.typed-cursor { animation: 0.7s ease 0s infinite normal none running blink;}
+
+@keyframes blink { 
+  0% { color: transparent; }
+  50% { color: white; }
+  100% { color: transparent; }
+}
+
+@-webkit-keyframes blink { 
+  0% { color: transparent; }
+  50% { color: white; }
+  100% { color: transparent; }
+}
+/*animation: 0.2s ease-in-out 0s infinite alternate none running cUnRlG;
+    flex-basis: 30px;

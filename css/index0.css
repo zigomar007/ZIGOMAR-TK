@@ -1,0 +1,102 @@
+﻿body {
+    cursor: url('file:///F:/d/4%20MON%20SITE/css-custom-cursor.ico'), auto;
+	
+	}
+
+.main{
+	cursor: url(mouser.cur);
+	}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant lF:hover ul { left: auto;
+/* Au survol des li du menu on replace les sous menus */
+   }
+.emb {
+	display: inline;
+	width:31%;
+	color:lightblue;
+	overflow:hidden;
+ height:80px;
+}
+.embh {
+	display: inline;
+	width:30.3%;
+	color:lightblue;
+	overflow:hidden;
+ height:80px;
+}
+.embr {
+	display: inline;
+	width:33%;
+	height:340px;
+	overflow:hidden;
+}
+#mmd {
+	background-color: #457B9D;  
+	width: 90%;
+    margin: auto;
+    border: solid 2px;
+    border-radius: 4px;
+<!--
+background: url(pied.png) repeat;
+-->
+	background-color:RGB(106,128,128); 
+    }
+.mmar {
+	line-height:2.5px;
+	display: inline;
+	height:16px;
+	color:lightblue;width: 120%;
+}
+.mmmar {
+	line-height:2.5px;
+	display: inline;
+	height:16px;
+	color:lightblue;
+}
+.embo {
+	display: inline;
+	width:38%;
+	color:lightblue;
+	overflow:hidden;
+}
+#embro {
+	border-radius:50px;
+}
+footer {
+    overflow:hidden;
+	}
+#Boutmira
+{
+border-radius:50px;
+position: ;
+}
+#imagoo
+{
+height:200px;
+}
+#imagoo2
+{
+height:200px;
+}
+#textoo
+{
+height:200px;
+}
+.col-xs-12 box
+{
+height:400px;
+}
