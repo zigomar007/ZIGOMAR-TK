@@ -2,8 +2,8 @@
 <!-- saved from url=(0049)http://bdoubliees.com/vaillantpif/annees/1950.htm -->
 <html><head>
 <title>export</title>	
-<script src="file:///F:/d/SERVEUR%20ne%20pas%20toucher/js/jquery.js"></script><script src="file:///F:/d/SERVEUR%20ne%20pas%20toucher/js/jquery-3.1.0.min.js"></script>
-<script src="procedures.js"> </script>
+<script src="../js/jquery.js"></script><script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/procedures.js"> </script>
 <style>
 img {
 width :100%;
@@ -48,7 +48,7 @@ if (nav == "Mic" && ver >= 4) {
 $('#reifeisen_mapoal').html('<b><a href="http://bdoubliees.com/couvertures/'+dayd+'.htm">La couverture du jour</a></b>\n<br><img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/'+mond+"/"+dayd+'.jpg"');		
 
 
-$('#reifeisen_mapoal').html('<img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/' + mond +"/" + dayd + '.jpg">'););
+$('#reifeisen_mapoal').html('<img src="imgdate/' + mond +"/" + dayd + '.jpg">'););
 }
 
 
@@ -75,7 +75,7 @@ var $=jQuery;
 		
 	
 		
-		$('#reifeisen_mapoal').html('<img src="file:///I:/d/SERVEUR%20ne%20pas%20toucher/imgdate/' + mond +"/" + dayd + '.jpg">');});
+		$('#reifeisen_mapoal').html('<img src="imgdate/' + mond +"/" + dayd + '.jpg">');});
 </script></div>	
 https://random.imagecdn.app/500/150
 -->
@@ -86,7 +86,7 @@ function couvjour() {
   var now = new Date(lTime); 
   var day = now.getDate();
   var mois = now.getMonth()+1;
-  document.write('<img src="https://picsum.photos/500/150" srcset="imgdate/'  + mois + '/' + day + '.jpg" >');
+  document.write('<img srcset="https://picsum.photos/500/150" src="imgdate/'  + mois + '/' + day + '.jpg" >');
 }
 
 
