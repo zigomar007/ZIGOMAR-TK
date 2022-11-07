@@ -1,0 +1,247 @@
+﻿<!doctype html>
+<!--
+url('https://davidwalsh.name/demo/css-custom-cursor.ico'), auto;
+-->
+<html class="index">
+<head>
+<title>MON SITE</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="14878847v=3&s=402" type="img/icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="reset.css"> 
+<link rel="stylesheet" href="blink.css">
+<link rel="stylesheet" href="f.css">
+<link rel="stylesheet" href="toutmespages.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index0.css">
+<script src="jquery.js"></script>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="roulevite.js"></script>
+<script> var localnow = new Date(); 
+  var lTime = localnow.getTime()+(localnow.getTimezoneOffset()-60)*60; 
+  var now = new Date(lTime); 
+  var jour = now.getDate();
+  var mois = now.getMonth()+1;
+var prenom =  jour + mois ;
+ document.getElementById('toto').innerHTML = prenom ;
+</script>
+
+<style>#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul { left: auto;
+/* Au survol des li du menu on replace les sous menus */
+   
+	}
+#toto {background-color: white;}
+#textoo {background-color:;}
+	</style>
+</head> 
+<body onload="runSlideShow();" style="cursor: url('mouser.cur')">
+<div id="FloatSlideShow"><embed src="clock.html" id="embro" width="110" height="110"></embed></div>
+<!-- End of editable HTML file:///F:/d/4 MON%20SITE/horloge2.html-->
+<script>
+
+/* Floating Slide Show Script C.2004 by CodeLifter.com */
+
+// You *must* add onload="runSlideShow()" to the <bdy> tag
+// of the page.
+
+// In the section marked Edit the HTML, above, remember to
+// set the path and size for the first image.
+
+// =======================================
+// Set the following variables
+// =======================================
+
+// Set slideShowSpeed (milliseconds):
+var slideShowSpeed = 3000
+
+// Duration of crossfade (seconds) for IF:
+var crossFadeDuration = 3
+
+// Set the positioning variables, below:
+// Negative numbers are relative to right (whereX) or bottom (whereY)
+// Positive numbers are relative to left (whereX) or (whereY) top
+// Experiment with values to get positioning exact, and allow
+// for the dimensions of the image in the positioning
+
+var whereX = 900.8;
+var whereY = 140;
+
+// Specify the image files:
+var Pic = new Array() // don't touch this!
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = 'image_1.gif'
+Pic[1] = 'image_2.gif'
+Pic[2] = 'image_3.gif'
+Pic[3] = 'image_4.gif'
+Pic[4] = 'image_5.gif'
+
+// =======================================
+// Do not edit *anything* below this line!
+// =======================================
+
+var nn=(navigator.appName.indexOf("Netscape")!=-1);
+var t;var j=0;var p=Pic.length;var preLoad=new Array();
+for (i=0;i<p;i++){preLoad[i]=new Image();preLoad[i].src = Pic[i];}
+function runSlideShow(){
+if (document.all){
+document.images.SlideShow.style.filter="blendTrans(duration=2)";
+document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+document.images.SlideShow.filters.blendTrans.Apply();}
+if (document.all || document.getElementById){document.images.SlideShow.src = preLoad[j].src;}else{
+document.FloatSlideShow.document.images["SlideShow"].src = preLoad[j].src;}
+if (document.all){document.images.SlideShow.filters.blendTrans.Play();}
+j=j+1;if (j>(p-1))j=0;t=setTimeout('runSlideShow()', slideShowSpeed);}
+var dD=document,dH=dD.html,dB=dD.body,px=dD.layers?'':'px';
+function floatSS(iX,iY,id){
+var L=dD.getElementById?dD.getElementById(id):dD.all?dD.all[id]:dD.layers[id];		
+this[id+'O']=L;if(dD.layers)L.style=L;L.nX=L.iX=iX;L.nY=L.iY=iY;
+L.P=function(x,y){this.style.left=x+px;this.style.top=y+px;};L.Fss=function(){var pX, pY;	
+pX=(this.iX >=0)?0:nn?innerWidth:nn&&dH.clientWidth?dH.clientWidth:dB.clientWidth;	
+pY=nn?pageYOffset:nn&&dH.scrollTop?dH.scrollTop:dB.scrollTop;	
+if(this.iY<0)pY+=nn?innerHeight:nn&&dH.clientHeight?dH.clientHeight:dB.clientHeight;	
+this.nX+=.1*(pX+this.iX-this.nX);this.nY+=.1*(pY+this.iY-this.nY);this.P(this.nX,this.nY);
+setTimeout(this.id+'O.Fss()',33);};return L;}
+
+
+floatSS(whereX,whereY,'FloatSlideShow').Fss();
+</script>
+<!--
+http://www.theatrons.com/menu_fichiers/accueil.gif file:///F:/d/4 MON%20SITE/date%20et%20salat/salat%20et%20date.html
+
+<div class="imago">
+   <h6>..................IMAGE DU JOUR</h6>
+   <embed id="imago" src="file:///F:/d/bur/inf/trav/img%20jour.html" type=""></embed>
+   <hr> <hr> <hr>
+   <h6>..................BLAGUE DU JOUR</h6>
+   <embed id="texto" src="file:///F:/d/bur/inf/trav/BLAGUE%20DU%20JOUR.html" type=""></embed>
+   </div>
+   
+   <embed class="mmmar" src="file:///F:/d/15%20tout%20html%20Apprendre%20informatique/lun/newcressent.html" style="height:20px"></embed>
+-->
+<div id="mmd"><marquee direction="right"><embed class="mmar" src="./count down/dd.html"></embed> </marquee></div>
+<header><embed class="emb" src="./count down/compte à rebours2.html"></embed>
+<embed class="embo" src="./salat/ss.html" style="height:80px"></embed>
+<embed class="embh" src="./count down/compte à rebours.html"></embed>
+</header>
+<div class="main">
+<!--maiiiiiiiiiiiiiiiiiiiiiiiiiin-->
+<div id="main_row">
+				<div class="container">
+<div class="col-sm-3" id="mainsidebar">
+<!--maiiiiiiiiiiiiiiiiiiiiiiiiiin-->
+
+<div class="col-xs-12 box"><center><h6>IMAGE DU JOUR</h6></center><div class="col-xs-122 box">
+				 <embed id="imagoo" src="aujourhui/d%20imgtoday.html" type=""></embed></div>
+<br></div>
+<!--maiiiiiiiiiiiiiiiiiiiiiiiiiin-->	
+<div class="col-xs-12 box"><center><h6>BLAGUE DU JOUR</h6></center><div class="col-xs-122 box">
+<embed id="textoo" src="aujourhui/BLAGUE.html"></embed>
+</div></div>
+<div class="col-xs-12 box"><center><h6>Phase de la lune</h6></center><div class="col-xs-122 box">
+<embed id="imagoo2" src="lune/moonPhaseImage.html" type=""></embed></div></div>
+<!--maiiiiiiiiiiiiiiiiiiiiiiiiiin--> 
+</div></div></div>
+<!--maiiiiiiiiiiiiiiiiiiiiiiiiiin--> 
+   <ul class="site-nav">
+   <li class="site-nav__item"><a href=".\index.html"><img src="Accueil (2).gif" alt="" align="top" height="20" hspace="5" width="20">HOME</a></li>
+   <li class="site-nav__item">   <a href=".\toutmespages2.html">page 2</a>  </li>
+   <li class="site-nav__item">   <a href=".\pages brifkati\cs.html">السيناريو</a>  </li>
+   <li class="site-nav__item">   <a href=".\pages brifkati\bifkati.html"> 2السيناريو</a>  </li>
+   <li class="site-nav__item">   <a href=".\toutmespages3.html">page 3</a>  </li>
+   <li class="site-nav__item">  <a href=".\toutmespages4.html">MA BIBLIOTHEQUE</a>   </li>
+   <li class="site-nav__item">  <a href=".\toutmespages5.html">mon projet écriture</a>   </li>
+   <li class="site-nav__item"><a href="tout%20wiki.html">mes wiki</a></li> <li class="site-nav__item"><a href=".\toutmespages7.html">mes sites</a></li>
+   <li class="site-nav__item"><a href=".\toutmespages8.html">page 8</a></li>
+   <li class="site-nav__item"><a href=".\toutmespages8 1.html">page 8 1</a></li>
+   
+
+
+<li class="site-nav__item"> <a href="phyto\phytooo.html">PHYTO</a></li>
+
+<li class="site-nav__item"><a href=".\tout tv\tout tv.html">REGARDER TV</a></li>
+<li class="site-nav__item"><a href=".\au cinema\cafes.html">CINEMATHEQUE</a></li>
+<li class="site-nav__item"> <a href="javascript:" onclick="window.open('aujourhui/jj.html#'+jour+mois, 'Radio Zigomar', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=628,height=380,left = 212,top = -16,'); return false;" title="Radio Zigomar">AUJOURD'HUI</a>
+</li>
+<li class="site-nav__item"> <a href="file:///F:/58/m%C3%A9t%C3%A9o%20tunis%20-%20Recherche%20Google.html" target="_blank">METEO</a></li>
+
+<ul id="menu-deroulant">
+<li  id="menu-deroulant"><a href=".\M A  P A G E\M A  P A G E.html">MA PAGE</a>
+<ul id="menu-deroulant">
+<li class=""><a href=".\mon tableau de bord\PAGE DEMARRAGE.html">PAGE DEMARRAGE</a></li>
+<li class=""><a href=".\mon tableau de bord\PAGE DEMARRAGE 2.html">PAGE DEMARRAGE 2</a></li>
+<li class=""><a href="AUJOURD'HUI.html">Toute la presse d'aujourd'hui</a></li>
+</ul></li>
+</ul>
+
+
+
+
+</ul>
+<ul id="ulist"><center><h6>ACTUELLEMENT SUR YOUTUBE</h6></center><li><a href="https://www.youtube.com/playlist?list=PLU12uITxBEPFmBo_2hWy4x3pL42kNkaLE" target="_blank">Direct - YouTube</a></li>  <li><a href="https://www.youtube.com/playlist?list=PL8fVUTBmJhHLXUGHGTlMFjx5RB8hz5q4f" target="_blank">Actuellement en direct – Sport</a></li>  <li><a href="https://www.youtube.com/playlist?list=PL57quI9usf_v-vv08t6OyfrLozoVaG7mK" target="_blank">Actuellement en direct–Technologie</a></li>  <li><a href="https://www.youtube.com/playlist?list=PLIFqWCuxNyoi2st6UpyeUfDhWAJuWqhpz" target="_blank">Actuellement en direct – Animaux</a></li>  <li><a href="https://www.youtube.com/playlist?list=PLU12uITxBEPEgJ-fMgXeqbCtWplYrpjqB" target="_blank">Google Hangouts en direct</a></li>  <li><a href="https://www.youtube.com/playlist?list=PLU12uITxBEPGH18GfKlqHyBUi6s7FYIFx" target="_blank">Diffusions en direct récentes - YouTube</a></li>  <li><a href="https://www.youtube.com/playlist?list=PLU12uITxBEPHEf7fGlP7f0grTsRk2gLL6" target="_blank">Diffusions en direct à venir - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=JWd5PaiPWqA&list=PLtmScGBKmFyRJV3c9Gs0ufmCSxg92QeOl&index=1" target="_blank" alt="">Mon playlist RAMADAN - 21 mn 30</a></li>
+<li><a href="https://www.youtube.com/watch?v=tYwID7LYoVQ&list=PLtmScGBKmFyQvqPs4Fsu5WttoXRZzGT5s&index=1" target="_blank" alt="">Mon playlist MATINALE</a></li> </ul>  
+<div id="sfcwl7mj1l6y6bd5ym6s9u6rzcjpwlasknw"></div><script type="text/javascript" src="https://counter5.optistats.ovh/private/counter.js?c=wl7mj1l6y6bd5ym6s9u6rzcjpwlasknw&down=async" async></script><noscript><a href="https://www.compteurdevisite.com" title="compteur web gratuit sans pub"><img src="https://counter5.optistats.ovh/private/compteurdevisite.php?c=wl7mj1l6y6bd5ym6s9u6rzcjpwlasknw" border="0" title="compteur web gratuit sans pub" alt="compteur web gratuit sans pub"></a></noscript>
+ <!-- <embed class="embr" src="lune/moonPhaseImage.html"></embed><br/>
+ <div id="fire" >  <div id="video-container"> <video autoplay loop muted class="fillWidth" > <!--poster="images/soleil.png-> <source src="vidbg.MP4" type="video/mp4"/>  Your browser does not support the video tag. I suggest you upgrade your browser. </video> <!--[if lte IE 6 ]> <embed src="http://www.youtube.com/v/_etwz7NkemE&hl=fr" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed> <![endif] </div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dolor, ipsa, voluptas velit voluptatibus nobis sint commodi quas asperiores cumque culpa ducimus tenetur quidem totam facilis laboriosam neque distinctio molestiae reiciendis voluptatum. Dolorem, suscipit, reiciendis, omnis atque alias quis praesentium expedita eum error earum libero quos adipisci saepe placeat voluptatem! Totam, quo, animi natus quibusdam ea modi sint illo ad quae nulla perferendis molestias excepturi consequuntur hic dolorum dicta eaque laborum delectus officia sequi aspernatur nobis quis eveniet ullam sapiente unde repudiandae quod enim consequatur incidunt velit perspiciatis facere nesciunt molestiae ut labore amet saepe non harum provident odio iusto. </div> 
+
+ <br/><iframe id="weatherwidget-io-0" class="weatherwidget-io-frame" title="Weather Widget" scrolling="no" frameborder="0" width="100%" src="https://weatherwidget.io/w/" style="display: block; position: absolute; top: 0px; height: 98px;"></iframe> -->
+ <footer><center>
+<embed id="foo" src="footer.html" width="97%" height=""></embed></center>
+ </footer> </div>
+ 
+ <div id="diChangeBackground"></div> 
+ 
+ 
+
+ 
+ 
+<a href="javascript:" onclick="window.open('file:///F:/o/x/xx.html', 'Radio Zigomar', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=628,height=380,left = 212,top = -16,'); return false;" title="Radio Zigomar"><img id="Boutmira"src="7cffb8cb.200x.gif" alt=""></a>
+ <!--
+   <div 
+ id="toto">.....</div>
+ --> 
+ <script> var localnow = new Date(); 
+  var lTime = localnow.getTime()+(localnow.getTimezoneOffset()-60)*60; 
+  var now = new Date(lTime); 
+  var jour = now.getDate();
+  var mois = now.getMonth()+1;
+var prenom =  jour + mois ;
+ document.getElementById('toto').innerHTML = prenom ;
+</script> <script src="roulevite.js"></script>
+</body>             
+</html>
+ <!--<div 
+ id="toto"></div>
+<script> var localnow = new Date(); 
+  var lTime = localnow.getTime()+(localnow.getTimezoneOffset()-60)*60; 
+  var now = new Date(lTime); 
+  var jour = now.getDate();
+  var mois = now.getMonth()+1;
+var prenom = '<a href="file:///F:/d/4%20MON%20SITE/aujourhui/jj.html#'+ jour + mois +'">Aujourdhui</a>';
+ document.getElementById('toto').innerHTML = prenom ;
+</script>
+
+
+ 
+ https://img.mfcimg.com/chat_images/u/7c/7cffb8cb.200x.gif
+ 14878847.jpg <link rel="shortcut icon" href="https://avatars1.githubusercontent.com/u/14878847?v=3&s=40" type="img/icon> https://yt3.ggpht.com/-U6xAlZv1Yd0/AAAAAAAAAAI/AAAAAAAAAAA/011b0PctFZE/s32-c-c0xffffff-k-no-rj-mo/photo --> 
