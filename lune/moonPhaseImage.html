@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+img {
+margin-top: 0px;
+
+}
+body {
+background-size: cover;
+background-repeat: no-repeat;
+max-height: 180px;
+overflow: hidden;
+}
+</style>
+</head>
+<body>
+<center><div id="moonPhaseImage"></div></center>
+<script src="jquery.min.js"></script>
+<script>
+var myPhaseName = "";
+var forecastImage = new Array();
+
+function moonPhasePercent( theDate )
+{
+  var synodic = 29.53058867;
+  var msPerDay = 86400000;
+  var baseDate = new Date();
+  baseDate.setUTCFullYear(2005);
+  baseDate.setUTCMonth(4);
+  baseDate.setUTCDate(8);
+  baseDate.setUTCHours(8);
+  baseDate.setUTCMinutes(48);
+
+  var diff = theDate - baseDate;
+  var phase = diff / (synodic * msPerDay);
+  phase *= 100;
+  phase %= 100;
+  if ( phase < 0 )
+    phase += 100;
+
+  return(phase);
+}
+
+function getMoonPhase( language, current )
+{
+  if ( ( language == "" ) || ( typeof language == "undefined" ) )
+    language = "fr";
+  var theDate = new Date();
+  if ( current == false )
+  {
+    theDate.setFullYear(document.lunarcalculatorform.mp_year.options[document.lunarcalculatorform.mp_year.selectedIndex].value);
+    theDate.setMonth(document.lunarcalculatorform.mp_month.options[document.lunarcalculatorform.mp_month.selectedIndex].value - 1);
+    theDate.setDate(document.lunarcalculatorform.mp_day.options[document.lunarcalculatorform.mp_day.selectedIndex].value);
+  }
+
+  var phasePercent = moonPhasePercent(theDate);
+  if (language == "fr")
+    var phaseNames = [
+    "Nouvelle Lune", "Nouvelle Lune",
+    "Premier Croissant", "Premier Croissant", "Premier Croissant", "Premier Croissant",
+    "Premier Quartier", "Premier Quartier", "Premier Quartier",
+    "Lune Gibbeuse Ascendante", "Lune Gibbeuse Ascendante", "Lune Gibbeuse Ascendante", "Lune Gibbeuse Ascendante", "Lune Gibbeuse Ascendante",
+    "Pleine Lune", "Pleine Lune",
+    "Lune Gibbeuse Descendante", "Lune Gibbeuse Descendante", "Lune Gibbeuse Descendante", "Lune Gibbeuse Descendante",
+    "Dernier Quartier", "Dernier Quartier", "Dernier Quartier",
+    "Dernier Croissant", "Dernier Croissant", "Dernier Croissant", "Dernier Croissant",
+    "Nouvelle Lune"];
+  else
+    var phaseNames = [
+    "New Moon", "New Moon",
+    "Waxing Crescent", "Waxing Crescent", "Waxing Crescent", "Waxing Crescent",
+    "First Quarter", "First Quarter", "First Quarter",
+    "Waxing Gibbous", "Waxing Gibbous", "Waxing Gibbous", "Waxing Gibbous", "Waxing Gibbous",
+    "Full Moon", "Full Moon",
+    "Waning Gibbous", "Waning Gibbous", "Waning Gibbous", "Waning Gibbous",
+    "Last Quarter", "Last Quarter", "Last Quarter",
+    "Waning Crescent", "Waning Crescent", "Waning Crescent", "Waning Crescent",
+    "New Moon"];
+
+   thePhase = Math.round(phasePercent * 0.279);
+  myPhaseName = phaseNames[thePhase];
+
+  return(thePhase);
+}
+
+function calcMoonPhase( language, current )
+{
+  var moonPhaseIcon = new Image();
+
+
+  if (language == "fr")
+    moonPhaseIcon.src = "images/Moon/Big/" + getMoonPhase(language, current) + ".png";
+  else
+    moonPhaseIcon.src = "images/Moon/Big/" + getMoonPhase(language, current) + ".png";
+
+  document.getElementById("moonPhaseImage").innerHTML = "<img src=\"" + moonPhaseIcon.src + "\" border=\"0\" width=\"136\" height=\"136\" title=\"" + myPhaseName + "\" alt=\"\">";
+
+  
+}calcMoonPhase();
+</script>
+<script>
+let z = new Image(); 
+let tod = new Date();
+let d = tod.getHours()+1;
+if (d <= 5) z.src = "soir.jpg";
+else if (d <= 17)
+z.src = "jour.webp";
+
+else
+   z.src = "soir.webp";
+
+
+document.body.background =  z.src ;
+ 
+</script>
+<!--
+<script>
+var newImage = new Image();
+newImage.src = "file:///F:/d/4%20MON%20SITE/lune/images/Moon/Big/27.png";
+
+function updateImage()
+{
+if(newImage.complete) {
+    document.getElementById("theText").src = newImage.src;
+    newImage = new Image();
+    number++;
+    newImage.src = "image.jpg?t=" + new Date().getTime();
+}
+
+    setTimeout(updateImage, 1000);
+}
+</script>
+-->
+</html>
