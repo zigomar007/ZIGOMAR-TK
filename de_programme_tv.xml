@@ -1,4 +1,29 @@
-﻿<item>
+<?xml version="1.0"?>
+
+<rss xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:georss="http://www.georss.org/georss" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+
+
+<channel>
+
+<atom:link type="application/rss+xml" rel="self" href="https://www.aljazeera.net/aljazeerarss/a7c186be-1baa-4bd4-9d80-a84db769f779/73d0e1b4-532f-45ef-b135-bfdff8b8cab9"/>
+
+<title>الجزيرة نت</title>
+<a href="https://cafezigomar.cf" target="_blank">قهوة زيقومار</a>
+<managingEditor>apps.support@aljazeera.net (Apps Support)</managingEditor>
+<webMaster>apps.support@https://zigomar007.github.io/rss-reader (Apps Support)</webMaster>
+<description>قهوة زيقومار: آخر الأخبار</description>
+<copyright>© 2022 قهوة زيقومار</copyright>
+<lastBuildDate>jeudi, 28 Oct 2022 20:54:49 +0000</lastBuildDate>
+<language>ar</language>
+<image>
+<url>https://cafezigomar.cf/images/coffee2.jpg</url>
+<title>café zigomar</title>
+<link>https://cafezigomar.cf</link>
+<description>قهوة زيقومار: آخر أخبار اليوم</description>
+</image>
+<author>بقلم : زيقومار</author>
+<generator>https://wordpress.org/?v=6.0.2</generator>
+<item>
 <guid>https://www.programme.tv/news/actu/220072-exclu-jai-ete-au-plus-bas-christopher-le-cross-se-confie-sur-son-passage-a-vide-avant-son-retour-a-la-television/</guid>
 <link>https://www.programme.tv/news/actu/220072-exclu-jai-ete-au-plus-bas-christopher-le-cross-se-confie-sur-son-passage-a-vide-avant-son-retour-a-la-television/#xtor=RSS-18</link>
 <title>Christopher (Le Cross) se confie sur son passage à vide avant son grand retour</title>
@@ -10,3 +35,5 @@ Christopher est de retour sur W9 dans Le Cross. Et le candidat de télé-réalit
 </description>
 <enclosure url="https://www.programme.tv/imgre/fit/https.3A.2F.2Fs2.2Edmcdn.2Enet.2Fv.2FUNQ4M1ZQgO1F-QehV/1160x500/crop-from/top/quality/80/exclu-j-ai-ete-au-plus-bas-christopher-le-cross-se-confie-sur-son-passage-a-vide-avant-son-retour-a-la-television.jpg" length="" type="image/" name="large"/>
 </item>
+</channel>
+</rss>
